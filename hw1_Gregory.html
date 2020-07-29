@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Donation Form</title>
+    <title>Form</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
    
     <style>
@@ -75,7 +75,7 @@
       flex-wrap:wrap;
       }
       .colums div {
-      width:48%;
+      width:100%;
       }
       input[type=radio], input[type=checkbox]  {
       display: none;
@@ -156,7 +156,6 @@
       display:block;
       padding-bottom:5px;
       }
-      }
     </style>
   </head>
   <body>
@@ -174,36 +173,27 @@
             <label for="lname"> Last Name<span>*</span></label>
             <input id="lname" type="text" name="lname" />
           </div>
-          <div class="item">
-            <label for="address">Email Address<span>*</span></label>
-            <input id="address" type="text"   name="address" />
-          </div>
-          <div class="item">
-            <label for="phone">Phone Number</label>
-            <input id="phone" type="tel"   name="phone"/>
-          </div>
-          <div class="item">
-            <label for="saddress">Street Address</label>
-            <input id="saddress" type="text"   name="city" />
-          </div>
-          <div class="item">
-            <label for="city">City</label>
-            <input id="city" type="text"   name="city" />
-          </div>
-          <div class="item">
-            <label for="zip">Zip/Postal Code</label>
-            <input id="zip" type="text"   name="zip" />
-          </div>
-          <div class="item">
-            <label for="country">Country</label>
-            <input id="country" type="text"   name="text" />
-          </div>
-
-      </div>
-    </form>
- <div class="btn-block">
+            <div class="colums" >
+                <div class="item " style="width: 100%;!important; display: inline;">
+         <select id="country" name="country" >
+   <option value="Afganistan">Afghanistan</option>
+   <option value="Albania">Albania</option>
+   <option value="Algeria">Algeria</option>
+   <option value="American Samoa">American Samoa</option>
+   <option value="Andorra">Andorra</option>
+   <option value="Angola">Angola</option>
+   <option value="Anguilla">Anguilla</option>
+            </select>
+                </div>
+                <textarea name="message" rows="10" cols="30">Write something...</textarea>
+                </div>
+        
+<div class="btn-block">
       <button type="order" href="/">Submit</button>
       </div>
+          </div></fieldset>
+    </form>
+ 
     </div>
   </body>
 </html>
